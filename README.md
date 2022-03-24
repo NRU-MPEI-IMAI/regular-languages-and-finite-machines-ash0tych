@@ -8,25 +8,25 @@
 
 ![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b,c%20%5C%7D%5E*%20%7C%20%7Cw%7C_c%20=%201%20%5C%7D)
 
-   <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_1.svg" alt="" data-align="center" width="717">    
+   <img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%201/graph_1_1.svg" alt="" data-align="center" width="717">    
 
 ##### Automat №2
 
 ![L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%5Cleq%20%202;%20%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
-<img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_2.svg" alt="" data-align="center" width="735">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%201/graph_1_2.svg" alt="" data-align="center" width="735">
 
 ##### Automat №3
 
 ![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%20%5Cneq%20%7Cw%7C_b%20%5C%7D)
 
-<img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_3.svg" alt="" data-align="center" width="743">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%201/graph_1_3.svg" alt="" data-align="center" width="743">
 
 ##### Automat №4
 
 ![L = \{w \in \{a,b\}^* | ww = www \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20ww%20=%20www%20%5C%7D)
 
-<img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_4.svg" alt="" data-align="center" width="687">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%201/graph_1_4.svg" alt="" data-align="center" width="687">
 
 ### Task 2. Create a FA that recognizes a given language. Automat must be constructed by direct production of DFA
 
@@ -36,15 +36,15 @@
 
    First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%202%5C%7D)
 
-<img title="" src="file:///D:/6 сем/TMOC/HW 1/task 2/1/graph_2_1_1.svg" alt="" data-align="center" width="827">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/1/graph_2_1_1.svg" alt="" data-align="center" width="827">
 
    Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
-<img title="" src="file:///D:/6 сем/TMOC/HW 1/task 2/1/graph_2_1_2.svg" alt="" data-align="center" width="784">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/1/graph_2_1_2.svg" alt="" data-align="center" width="784">
 
    And our final result:   
 
-![](D:\6%20сем\TMOC\HW%201\task%202\1\graph_2_1_3.svg)
+![](https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/1/graph_2_1_3.svg)
 
 ##### Automat №2
 
