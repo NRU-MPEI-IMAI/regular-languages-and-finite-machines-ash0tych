@@ -52,14 +52,14 @@
 
    First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \geq 3\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%203%5C%7D)
 
-<img title="" src="file:///D:/6 сем/TMOC/HW 1/task 2/2/graph_2_2_1.svg" alt="" data-align="center" width="791">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/2/graph_2_2_1.svg" alt="" data-align="center" width="791">
 
    Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \;is \; odd;\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5C;is%20%5C;%20odd;%5C%7D)
 
-<img title="" src="file:///D:/6%20сем/TMOC/HW%201/task%202/2/graph_2_2_2.svg" alt="" data-align="center" width="652">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/2/graph_2_2_2.svg" alt="" data-align="center" width="652">
 
    And our final result:
 
-<img title="" src="file:///D:/6%20сем/TMOC/HW%201/task%202/2/graph_2_2_3.svg" alt="" data-align="center" width="735">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/2/graph_2_2_3.svg" alt="" data-align="center" width="735">
 
 ##### Automat №3
