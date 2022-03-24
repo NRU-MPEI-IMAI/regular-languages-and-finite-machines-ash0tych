@@ -6,19 +6,19 @@
 
 ##### Automat №1
 
-![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DL%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b,c%20%5C%7D%5E*%20%7C%20%7Cw%7C_c%20=%201%20%5C%7D)
+![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b,c%20%5C%7D%5E*%20%7C%20%7Cw%7C_c%20=%201%20%5C%7D)
 
    <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_1.svg" alt="" data-align="center" width="717">    
 
 ##### Automat №2
 
-![L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DL%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%5Cleq%20%202;%20%7Cw%7C_b%20%5Cgeq%202%5C%7D)
+![L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%5Cleq%20%202;%20%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_2.svg" alt="" data-align="center" width="735">
 
 ##### Automat №3
 
-![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DL%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%20%5Cneq%20%7Cw%7C_b%20%5C%7D)
+![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%20%5Cneq%20%7Cw%7C_b%20%5C%7D)
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_3.svg" alt="" data-align="center" width="743">
 
@@ -32,13 +32,13 @@
 
 ##### Automat №1
 
-$L = \{w \in \{a,b\}^* ||w|_a \geq 2 \wedge |w|_b \geq 2\}$
+![L = \{w \in \{a,b\}^* ||w|_a \geq 2 \wedge |w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%202%20%5Cwedge%20%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
-   First, let's create DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_a \geq 2\}$
+   First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%202%5C%7D)
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 2/1/graph_2_1_1.svg" alt="" data-align="center" width="827">
 
-   Now, let's create second DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_b \geq 2\}$
+   Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 2/1/graph_2_1_2.svg" alt="" data-align="center" width="784">
 
@@ -48,13 +48,13 @@ $L = \{w \in \{a,b\}^* ||w|_a \geq 2 \wedge |w|_b \geq 2\}$
 
 ##### Automat №2
 
-L = $\{w \in \{a,b\}^* ||w|_a \geq 3 \wedge |w|_b \;is \; odd\; \}$
+![L = \{w \in \{a,b\}^* ||w|_a \geq 3 \wedge |w|_b \;is \; odd\; \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%203%20%5Cwedge%20%7Cw%7C_b%20%5C;is%20%5C;%20odd%5C;%20%5C%7D)
 
-   First, let's create DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_a \geq 3\}$
+   First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \geq 3\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%203%5C%7D)
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 2/2/graph_2_2_1.svg" alt="" data-align="center" width="791">
 
-   Now, let's create second DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_b \;is \; odd;\}$
+   Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \;is \; odd;\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5C;is%20%5C;%20odd;%5C%7D)
 
 <img title="" src="file:///D:/6%20сем/TMOC/HW%201/task%202/2/graph_2_2_2.svg" alt="" data-align="center" width="652">
 
