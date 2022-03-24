@@ -6,7 +6,7 @@
 
 ##### Automat №1
 
-![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/png.image?\dpi{110}\left\{&space;L&space;=&space;\{w&space;\in&space;\{a,b,c&space;\}^*&space;|&space;|w|_c&space;=&space;1&space;\}&space;\right\})
+![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DL%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b,c%20%5C%7D%5E*%20%7C%20%7Cw%7C_c%20=%201%20%5C%7D)
 
    <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_1.svg" alt="" data-align="center" width="717">    
 
