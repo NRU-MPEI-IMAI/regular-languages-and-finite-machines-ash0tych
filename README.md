@@ -8,7 +8,7 @@
 
 $L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}$
 
-   <img title="" src="file://task 1/graph_1_1.svg" alt="" data-align="center" width="717">    
+   <img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%201/graph_1_1.svg" alt="" data-align="center" width="717">    
 
 ##### Automat №2
 
