@@ -6,25 +6,25 @@
 
 ##### Automat №1
 
-![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/svg.image?L&space;=&space;\{w&space;\in&space;\{a,b,c&space;\}^*&space;|&space;|w|_c&space;=&space;1&space;\})
+![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/svg.image?\left\{&space;L&space;=&space;\{w&space;\in&space;\{a,b,c&space;\}^*&space;|&space;|w|_c&space;=&space;1&space;\}&space;\right\})
 
    <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_1.svg" alt="" data-align="center" width="717">    
 
 ##### Automat №2
 
-![L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L&space;=&space;\{w&space;\in&space;\{a,b\}^*&space;|&space;|w|_a&space;\leq&space;&space;2;&space;|w|_b&space;\geq&space;2\})
+![L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}](https://latex.codecogs.com/svg.image?\left\{&space;L&space;=&space;\{w&space;\in&space;\{a,b\}^*&space;|&space;|w|_a&space;\leq&space;&space;2;&space;|w|_b&space;\geq&space;2\}&space;\right\})
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_2.svg" alt="" data-align="center" width="735">
 
 ##### Automat №3
 
-![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/svg.image?L&space;=&space;\{w&space;\in&space;\{a,b\}^*&space;|&space;|w|_a&space;&space;\neq&space;|w|_b&space;\})
+![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/svg.image?\left\{L&space;=&space;\{w&space;\in&space;\{a,b\}^*&space;|&space;|w|_a&space;&space;\neq&space;|w|_b&space;\}&space;\right\})
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_3.svg" alt="" data-align="center" width="743">
 
 ##### Automat №4
 
-![L = \{w \in \{a,b\}^* | ww = www \}](https://latex.codecogs.com/svg.image?L&space;=&space;\{w&space;\in&space;\{a,b\}^*&space;|&space;ww&space;=&space;www&space;\})
+![L = \{w \in \{a,b\}^* | ww = www \}](https://latex.codecogs.com/svg.image?L&space;=&space;\left\{w&space;\in&space;\{a,b\}^*&space;|&space;ww&space;=&space;www&space;&space;\right\})
 
 <img title="" src="file:///D:/6 сем/TMOC/HW 1/task 1/graph_1_4.svg" alt="" data-align="center" width="687">
 
