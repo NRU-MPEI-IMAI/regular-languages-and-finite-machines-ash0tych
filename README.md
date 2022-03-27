@@ -80,15 +80,15 @@ And our final result:
 
 ##### Automat №4
 
-$L = \overline{L_3}$
+![L = \overline{L_3}](https://latex.codecogs.com/svg.image?L%20=%20%5Coverline%7BL_3%7D)
 
 Well, this is easy
 
-<img src="file:///D:/6%20сем/TMOC/HW%201/task%202/4/graph_2_4.svg" title="" alt="" width="726">
+<img src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/4/graph_2_4.svg" title="" alt="" width="726">
 
 ##### Automat №5
 
-$L = L_2 / L_3$
+![L = L_2 / L_3](https://latex.codecogs.com/svg.image?L%20=%20L_2%20/%20L_3)
 
 So, $L_2$ has 8 nodes and $L_3$ has 6 nodes. This mean's $L_5$ will have 48 nodes.... Screw this
 
