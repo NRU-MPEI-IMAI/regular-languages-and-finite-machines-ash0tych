@@ -72,11 +72,11 @@ First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \;is \; e
 
 Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \; is \; multiple \; of \; 3\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5C;%20is%20%5C;%20multiple%20%5C;%20of%20%5C;%203%5C%7D)
 
-<img src=""https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/3/graph_2_3_2.svg" title="" alt="" width="751">
+<img src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/3/graph_2_3_2.svg" title="" alt="" width="751">
 
 And our final result:
 
-<img title="" src=""https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/3/graph_2_3_3.svg" alt="" width="771">
+<img title="" src="https://github.com/NRU-MPEI-IMAI/regular-languages-and-finite-machines-ash0tych/blob/main/task%202/3/graph_2_3_3.svg" alt="" width="771">
 
 ##### Automat №4
 
