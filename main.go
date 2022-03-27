@@ -252,6 +252,85 @@ func GenerateGraph_2_2_3() {
 	g.RenderFilename(graph, graphviz.SVG, "task 2/2/graph_2_2_3.svg")
 }
 
+func GenerateGraph_2_3_1() {
+	g := graphviz.New()
+	graph, _ := g.Graph()
+
+	nodes := GenerateNodesSlice(graph, "q", 2, GenerateTerminalMap(1))
+	GenerateConnect(graph, nodes, 1, 2, "a")
+	GenerateConnect(graph, nodes, 2, 1, "a")
+	GenerateConnect(graph, nodes, 1, 1, "b")
+	GenerateConnect(graph, nodes, 2, 2, "b")
+
+	g.RenderFilename(graph, graphviz.SVG, "task 2/3/graph_2_3_1.svg")
+}
+func GenerateGraph_2_3_2() {
+	g := graphviz.New()
+	graph, _ := g.Graph()
+
+	nodes := GenerateNodesSlice(graph, "z", 3, GenerateTerminalMap(1))
+	GenerateConnect(graph, nodes, 1, 2, "b")
+	GenerateConnect(graph, nodes, 2, 3, "b")
+	GenerateConnect(graph, nodes, 3, 1, "b")
+
+	GenerateConnect(graph, nodes, 1, 1, "a")
+	GenerateConnect(graph, nodes, 2, 2, "a")
+	GenerateConnect(graph, nodes, 3, 3, "a")
+
+	g.RenderFilename(graph, graphviz.SVG, "task 2/3/graph_2_3_2.svg")
+}
+func GenerateGraph_2_3_3() {
+	g := graphviz.New()
+	graph, _ := g.Graph()
+
+	matr := GenerateNodeMatrix(graph, "q", "z", 2, 3, GenerateTerminalMap(1), GenerateTerminalMap(1))
+	GenerateDoubleConnect(graph, matr, 1, 1, 2, 1, "a")
+	GenerateDoubleConnect(graph, matr, 2, 1, 1, 1, "a")
+
+	GenerateDoubleConnect(graph, matr, 1, 2, 2, 2, "a")
+	GenerateDoubleConnect(graph, matr, 2, 2, 1, 2, "a")
+
+	GenerateDoubleConnect(graph, matr, 1, 3, 2, 3, "a")
+	GenerateDoubleConnect(graph, matr, 2, 3, 1, 3, "a")
+
+	GenerateDoubleConnect(graph, matr, 1, 1, 1, 2, "b")
+	GenerateDoubleConnect(graph, matr, 1, 2, 1, 3, "b")
+	GenerateDoubleConnect(graph, matr, 1, 3, 1, 1, "b")
+
+	GenerateDoubleConnect(graph, matr, 2, 1, 2, 2, "b")
+	GenerateDoubleConnect(graph, matr, 2, 2, 2, 3, "b")
+	GenerateDoubleConnect(graph, matr, 2, 3, 2, 1, "b")
+
+	g.RenderFilename(graph, graphviz.SVG, "task 2/3/graph_2_3_3.svg")
+}
+
+func GenerateGraph_2_4() {
+	g := graphviz.New()
+	graph, _ := g.Graph()
+
+	matr := GenerateNodeMatrix(graph, "q", "z", 2, 3, GenerateTerminalMap(1, 2), GenerateTerminalMap(1, 2, 3))
+	GenerateDoubleConnect(graph, matr, 1, 1, 2, 1, "a")
+	GenerateDoubleConnect(graph, matr, 2, 1, 1, 1, "a")
+
+	GenerateDoubleConnect(graph, matr, 1, 2, 2, 2, "a")
+	GenerateDoubleConnect(graph, matr, 2, 2, 1, 2, "a")
+
+	GenerateDoubleConnect(graph, matr, 1, 3, 2, 3, "a")
+	GenerateDoubleConnect(graph, matr, 2, 3, 1, 3, "a")
+
+	GenerateDoubleConnect(graph, matr, 1, 1, 1, 2, "b")
+	GenerateDoubleConnect(graph, matr, 1, 2, 1, 3, "b")
+	GenerateDoubleConnect(graph, matr, 1, 3, 1, 1, "b")
+
+	GenerateDoubleConnect(graph, matr, 2, 1, 2, 2, "b")
+	GenerateDoubleConnect(graph, matr, 2, 2, 2, 3, "b")
+	GenerateDoubleConnect(graph, matr, 2, 3, 2, 1, "b")
+
+	matr[0][0].SetShape("circle")
+
+	g.RenderFilename(graph, graphviz.SVG, "task 2/4/graph_2_4.svg")
+}
+
 func main() {
 	GenerateGraph_1_1()
 	GenerateGraph_1_2()
@@ -261,8 +340,14 @@ func main() {
 	GenerateGraph_2_1_1()
 	GenerateGraph_2_1_2()
 	GenerateGraph_2_1_3()
+
 	GenerateGraph_2_2_1()
 	GenerateGraph_2_2_2()
 	GenerateGraph_2_2_3()
 
+	GenerateGraph_2_3_1()
+	GenerateGraph_2_3_2()
+	GenerateGraph_2_3_3()
+
+	GenerateGraph_2_4()
 }
