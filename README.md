@@ -90,5 +90,5 @@ Well, this is easy
 
 ![L = L_2 / L_3](https://latex.codecogs.com/svg.image?L%20=%20L_2%20/%20L_3)
 
-So, $L_2$ has 8 nodes and $L_3$ has 6 nodes. This mean's $L_5$ will have 48 nodes.... Screw this
+So, ![L_2](https://latex.codecogs.com/svg.image?L_2) has 8 nodes and ![L_2](https://latex.codecogs.com/svg.image?L_3) has 6 nodes. This mean's ![L_2](https://latex.codecogs.com/svg.image?L_5) will have 48 nodes.... Screw this
 
