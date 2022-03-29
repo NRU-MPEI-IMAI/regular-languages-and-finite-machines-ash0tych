@@ -117,7 +117,7 @@ Now, using this table, we can convert NFA to DFA
 
 ##### Regular expression №2
 
-![a(a(ab)^∗b )^∗ (ab)^∗](https://latex.codecogs.com/svg.image?a(a(ab)%5E%E2%88%97b%20)%5E%E2%88%97%20(ab)%5E%E2%88%97)
+![ a(a(ab)^∗b )^∗ (ab)^∗ ](https://latex.codecogs.com/svg.image?a(a(ab)%5E*b)%5E*(ab)%5E*)
 
 NFA:
 
@@ -169,7 +169,7 @@ DFA:
 
 ##### Regular expression №4
 
-![(b + c) ((ab)^∗ c + (ba)^∗ )^∗ ](https://latex.codecogs.com/svg.image?(b%20&plus;%20c)%20((ab)%5E%E2%88%97%20c%20&plus;%20(ba)%5E%E2%88%97%20)%5E%E2%88%97%20)
+![(b + c) ((ab)^* c + (ba)^* )^* ](https://latex.codecogs.com/svg.image?(b%20&plus;%20c)%20((ab)%5E*%20c%20&plus;%20(ba)%5E*%20)%5E*%20)
 
 We don't even need NFA for this case. Lets create DFA:
 
@@ -195,54 +195,56 @@ Yes it's regular
 
 ##### Language 2
 
-![L = \{uaav \mid u ∈ \{a, b\}^∗, v ∈ \{a, b\}^∗, |u|_b ≥ |v|_a\}](https://latex.codecogs.com/svg.image?$L%20=%20%5C%7Buaav%20%5Cmid%20u%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20v%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20%7Cu%7C_b%20%E2%89%A5%20%7Cv%7C_a%5C%7D)
+![L = \{uaav \mid u ∈ \{a, b\}^*, v ∈ \{a, b\}^*, |u|_b ≥ |v|_a\}](https://latex.codecogs.com/svg.image?$L%20=%20%5C%7Buaav%20%5Cmid%20u%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20v%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20%7Cu%7C_b%20%E2%89%A5%20%7Cv%7C_a%5C%7D)
 
 ![
+\\
 \omega = b^naaa^n, |\omega| \geq  n \\
 \omega = xyz\\
 x = b^i \quad y=b^j \quad i + j \leq n \quad j > 0 \\
 z = b^{n-i-j}aaa^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^0z = b^ib^{n-i-j}aaa^n = b^{n-j}aaa^n\notin L
-](https://latex.codecogs.com/svg.image?%5Comega%20=%20b%5Enaaa%5En,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%5C%5Cx%20=%20b%5Ei%20%5Cquad%20y=b%5Ej%20%5Cquad%20i%20&plus;%20j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20b%5E%7Bn-i-j%7Daaa%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20b%5Eib%5E%7Bn-i-j%7Daaa%5En%20=%20b%5E%7Bn-j%7Daaa%5En%5Cnotin%20L)
+](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20b%5Enaaa%5En,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%5C%5Cx%20=%20b%5Ei%20%5Cquad%20y=b%5Ej%20%5Cquad%20i%20&plus;%20j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20b%5E%7Bn-i-j%7Daaa%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20b%5Eib%5E%7Bn-i-j%7Daaa%5En%20=%20b%5E%7Bn-j%7Daaa%5En%5Cnotin%20L
 
 ##### Language 3
 
-$L = \{a^mw \mid w ∈ \{a, b\}^∗, 1 ≤ |w|_b ≤ m\}$
+![L = \{a^mw \mid w \in \{a, b\}^*, 1 \leqslant  |w|_b \leqslant  m\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Ba%5Emw%20%5Cmid%20w%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%201%20%5Cleqslant%20%20%7Cw%7C_b%20%5Cleqslant%20%20m%5C%7D)
 
-$$
+![
+\\
 \omega = a^nb^n , |\omega| \geq  n \\
 \omega = xyz \\
 x = a^i \quad y = a^j \quad i+j \leq n \quad j > 0 \\
 z = a^{n-i-j}b^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^0z = a^ia^{n-i-j}b^n = a^{n-j}b^n \notin L
-$$
+](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20a%5Enb%5En%20,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20a%5Ei%20%5Cquad%20y%20=%20a%5Ej%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20a%5E%7Bn-i-j%7Db%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20a%5Eia%5E%7Bn-i-j%7Db%5En%20=%20a%5E%7Bn-j%7Db%5En%20%5Cnotin%20L)
 
 ##### Language 4
 
-$L = \{a^kb^ma^n \mid k = n ∨ m > 0\}$
+![L = \{a^kb^ma^n \mid k = n \vee m > 0\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Ba%5Ekb%5Ema%5En%20%5Cmid%20k%20=%20n%20%5Cvee%20%20m%20%3E%200%5C%7D)
 
-$$
+![
+\\
 \omega = a^nba^n , |\omega| \geq  n \\
 \omega = xyz \\
 x = a^i \quad y = a^j \quad i+j \leq n \quad j > 0 \\
 z = a^{n-i-j}ba^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^kz = a^ia^{jk}a^{n-i-j}ba^n = a^{n-j(k-1)}ba^n \notin L \quad \forall k > 1
-$$
+](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20a%5Enba%5En%20,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20a%5Ei%20%5Cquad%20y%20=%20a%5Ej%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20a%5E%7Bn-i-j%7Dba%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5Ekz%20=%20a%5Eia%5E%7Bjk%7Da%5E%7Bn-i-j%7Dba%5En%20=%20a%5E%7Bn-j(k-1)%7Dba%5En%20%5Cnotin%20L%20%5Cquad%20%5Cforall%20k%20%3E%201)
 
 ##### Language 5
 
-$L = \{ucv \mid u ∈ \{a, b\}^∗, v ∈ \{a, b\}^∗, u \neq v^R\}$
+![L = \{ucv \mid u \in \{a, b\}^*, v \in \{a, b\}^*, u \neq v^R\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bucv%20%5Cmid%20u%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%20v%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%20u%20%5Cneq%20v%5ER%5C%7D)
 
-$$
-
+![
+\\
 \omega = (ab)^nc(ba)^n = \alpha_1\alpha_2...\alpha_{4n+1}, |\omega| \geq n \\
 \omega = xyz \\
 x = \alpha_1\alpha_2...\alpha_i \quad y=\alpha_{i+1}\alpha_{i+2}...\alpha_{i+j} \quad i+j \leq n \quad j > 0\\
 z = \alpha_{i+j+1}\alpha_{i+j+2}...\alpha_{2n}c(ba)^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^kz = \alpha_1...\alpha_i(\alpha_{i+1}...\alpha_{i+j})^k\alpha_{i+j+1}...\alpha_{2n}c(ba)^n \notin L \quad \forall k > 1\\
-
-$$
+](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20(ab)%5Enc(ba)%5En%20=%20%5Calpha_1%5Calpha_2...%5Calpha_%7B4n&plus;1%7D,%20%7C%5Comega%7C%20%5Cgeq%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20%5Calpha_1%5Calpha_2...%5Calpha_i%20%5Cquad%20y=%5Calpha_%7Bi&plus;1%7D%5Calpha_%7Bi&plus;2%7D...%5Calpha_%7Bi&plus;j%7D%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%5C%5Cz%20=%20%5Calpha_%7Bi&plus;j&plus;1%7D%5Calpha_%7Bi&plus;j&plus;2%7D...%5Calpha_%7B2n%7Dc(ba)%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5Ekz%20=%20%5Calpha_1...%5Calpha_i(%5Calpha_%7Bi&plus;1%7D...%5Calpha_%7Bi&plus;j%7D)%5Ek%5Calpha_%7Bi&plus;j&plus;1%7D...%5Calpha_%7B2n%7Dc(ba)%5En%20%5Cnotin%20L%20%5Cquad%20%5Cforall%20k%20%3E%201%5C%5C)
