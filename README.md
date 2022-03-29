@@ -96,7 +96,7 @@ So, ![L_2](https://latex.codecogs.com/svg.image?L_2) has 8 nodes and ![L_3](http
 
 ##### Regular expression №1
 
-$(ab+aba)^* a$
+![(ab+aba)^* a](https://latex.codecogs.com/svg.image?(ab&plus;aba)%5E*%20a)
 
 Btw, since now i will only compile .dot in Golang, because writing there something more than 6 nodes is realy hard.
 
@@ -117,7 +117,7 @@ Now, using this table, we can convert NFA to DFA
 
 ##### Regular expression №2
 
-$a(a(ab)^∗b )^∗ (ab)^∗$
+![a(a(ab)^∗b )^∗ (ab)^∗](https://latex.codecogs.com/svg.image?a(a(ab)%5E%E2%88%97b%20)%5E%E2%88%97%20(ab)%5E%E2%88%97)
 
 NFA:
 
@@ -145,7 +145,7 @@ But there is a problem. This automat is not minimal and our task is to create **
 
 ##### Regular expression №3
 
-$(a + (a + b) (a + b)b)^* $
+![(a + (a + b) (a + b)b)^* ](https://latex.codecogs.com/svg.image?(a%20&plus;%20(a%20&plus;%20b)%20(a%20&plus;%20b)b)%5E*%20)
 
 NFA:
 
@@ -169,7 +169,7 @@ DFA:
 
 ##### Regular expression №4
 
-$(b + c) ((ab)^∗ c + (ba)^∗ )^∗ $
+![(b + c) ((ab)^∗ c + (ba)^∗ )^∗ ](https://latex.codecogs.com/svg.image?(b%20&plus;%20c)%20((ab)%5E%E2%88%97%20c%20&plus;%20(ba)%5E%E2%88%97%20)%5E%E2%88%97%20)
 
 We don't even need NFA for this case. Lets create DFA:
 
@@ -181,13 +181,13 @@ We can minimize this:
 
 ##### Regular expression №5
 
-$(a + b)^+ (aa + bb + abab + baba) (a + b)^+ $ .... No
+![(a + b)^+ (aa + bb + abab + baba) (a + b)^+ ](https://latex.codecogs.com/svg.image?(a%20&plus;%20b)%5E&plus;%20(aa%20&plus;%20bb%20&plus;%20abab%20&plus;%20baba)%20(a%20&plus;%20b)%5E&plus;%20) .... No
 
 ### Task 4. Determine whether the language is regular or not
 
 ##### Language 1
 
-$L = {(aab)^nb(aba)^m \mid n ≥ 0, m ≥ 0}$
+![L = {(aab)^nb(aba)^m \mid n ≥ 0, m ≥ 0}](https://latex.codecogs.com/svg.image?L%20=%20%7B(aab)%5Enb(aba)%5Em%20%5Cmid%20n%20%E2%89%A5%200,%20m%20%E2%89%A5%200%7D)
 
 <img title="" src="./task 4/graph_4_1.svg" alt="" data-align="inline" width="695">
 
@@ -195,16 +195,16 @@ Yes it's regular
 
 ##### Language 2
 
-$L = \{uaav \mid u ∈ \{a, b\}^∗, v ∈ \{a, b\}^∗, |u|_b ≥ |v|_a\}$
+![L = \{uaav \mid u ∈ \{a, b\}^∗, v ∈ \{a, b\}^∗, |u|_b ≥ |v|_a\}](https://latex.codecogs.com/svg.image?$L%20=%20%5C%7Buaav%20%5Cmid%20u%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20v%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20%7Cu%7C_b%20%E2%89%A5%20%7Cv%7C_a%5C%7D)
 
-$$
+![
 \omega = b^naaa^n, |\omega| \geq  n \\
 \omega = xyz\\
 x = b^i \quad y=b^j \quad i + j \leq n \quad j > 0 \\
 z = b^{n-i-j}aaa^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^0z = b^ib^{n-i-j}aaa^n = b^{n-j}aaa^n\notin L
-$$
+](https://latex.codecogs.com/svg.image?%5Comega%20=%20b%5Enaaa%5En,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%5C%5Cx%20=%20b%5Ei%20%5Cquad%20y=b%5Ej%20%5Cquad%20i%20&plus;%20j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20b%5E%7Bn-i-j%7Daaa%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20b%5Eib%5E%7Bn-i-j%7Daaa%5En%20=%20b%5E%7Bn-j%7Daaa%5En%5Cnotin%20L)
 
 ##### Language 3
 
