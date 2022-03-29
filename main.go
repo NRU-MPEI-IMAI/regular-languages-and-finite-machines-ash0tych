@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/goccy/go-graphviz"
 	"github.com/goccy/go-graphviz/cgraph"
+	"io/ioutil"
 )
 
 func GenerateTerminalMap(i ...int) (ans map[int]struct{}) {
@@ -303,7 +304,6 @@ func GenerateGraph_2_3_3() {
 
 	g.RenderFilename(graph, graphviz.SVG, "task 2/3/graph_2_3_3.svg")
 }
-
 func GenerateGraph_2_4() {
 	g := graphviz.New()
 	graph, _ := g.Graph()
@@ -331,6 +331,85 @@ func GenerateGraph_2_4() {
 	g.RenderFilename(graph, graphviz.SVG, "task 2/4/graph_2_4.svg")
 }
 
+func GenerateGraph_3_1() {
+	g := graphviz.New()
+
+	b, _ := ioutil.ReadFile("./task 3/dots/graph_3_1_1.dot")
+	graph, _ := graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_1_1.svg")
+
+	b, _ = ioutil.ReadFile("./task 3/dots/graph_3_1_2.dot")
+	graph, _ = graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_1_2.svg")
+}
+func GenerateGraph_3_2() {
+	g := graphviz.New()
+
+	b, _ := ioutil.ReadFile("./task 3/dots/graph_3_2_1.dot")
+	graph, _ := graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_2_1.svg")
+
+	b, _ = ioutil.ReadFile("./task 3/dots/graph_3_2_2.dot")
+	graph, _ = graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_2_2.svg")
+
+	b, _ = ioutil.ReadFile("./task 3/dots/graph_3_2_3.dot")
+	graph, _ = graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_2_3.svg")
+}
+func GenerateGraph_3_3() {
+	g := graphviz.New()
+
+	b, _ := ioutil.ReadFile("./task 3/dots/graph_3_3_1.dot")
+	graph, _ := graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_3_1.svg")
+
+	b, _ = ioutil.ReadFile("./task 3/dots/graph_3_3_2.dot")
+	graph, _ = graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_3_2.svg")
+}
+func GenerateGraph_3_4() {
+	g := graphviz.New()
+
+	b, _ := ioutil.ReadFile("./task 3/dots/graph_3_4_2.dot")
+	graph, _ := graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_4_2.svg")
+
+	b, _ = ioutil.ReadFile("./task 3/dots/graph_3_4_3.dot")
+	graph, _ = graphviz.ParseBytes(b)
+
+	g.RenderFilename(graph, graphviz.SVG, "./task 3/rendered/graph_3_4_3.svg")
+}
+
+func GenerateGraph_4_1() {
+	g := graphviz.New()
+	graph, _ := g.Graph()
+
+	nodes := GenerateNodesSlice(graph, "q", 8, GenerateTerminalMap(8))
+	GenerateConnect(graph, nodes, 1, 2, "a")
+	GenerateConnect(graph, nodes, 2, 3, "a")
+	GenerateConnect(graph, nodes, 3, 4, "b")
+	GenerateConnect(graph, nodes, 4, 1, "lmb")
+	GenerateConnect(graph, nodes, 1, 4, "lmb")
+
+	GenerateConnect(graph, nodes, 4, 5, "a")
+	GenerateConnect(graph, nodes, 5, 8, "lmb")
+	GenerateConnect(graph, nodes, 8, 5, "lmb")
+	GenerateConnect(graph, nodes, 5, 6, "a")
+	GenerateConnect(graph, nodes, 6, 7, "b")
+	GenerateConnect(graph, nodes, 7, 8, "a")
+
+	g.RenderFilename(graph, graphviz.SVG, "task 4/graph_4_1.svg")
+}
+
 func main() {
 	GenerateGraph_1_1()
 	GenerateGraph_1_2()
@@ -350,4 +429,11 @@ func main() {
 	GenerateGraph_2_3_3()
 
 	GenerateGraph_2_4()
+
+	GenerateGraph_3_1()
+	GenerateGraph_3_2()
+	GenerateGraph_3_3()
+	GenerateGraph_3_4()
+
+	GenerateGraph_4_1()
 }
