@@ -205,7 +205,7 @@ x = b^i \quad y=b^j \quad i + j \leq n \quad j > 0 \\
 z = b^{n-i-j}aaa^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^0z = b^ib^{n-i-j}aaa^n = b^{n-j}aaa^n\notin L \\
-](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20b%5Enaaa%5En,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%5C%5Cx%20=%20b%5Ei%20%5Cquad%20y=b%5Ej%20%5Cquad%20i%20&plus;%20j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20b%5E%7Bn-i-j%7Daaa%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20b%5Eib%5E%7Bn-i-j%7Daaa%5En%20=%20b%5E%7Bn-j%7Daaa%5En%5Cnotin%20L
+](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20b%5Enaaa%5En,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%5C%5Cx%20=%20b%5Ei%20%5Cquad%20y=b%5Ej%20%5Cquad%20i%20&plus;%20j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20b%5E%7Bn-i-j%7Daaa%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20b%5Eib%5E%7Bn-i-j%7Daaa%5En%20=%20b%5E%7Bn-j%7Daaa%5En%5Cnotin%20L)
 
 ##### Language 3
 
