@@ -6,25 +6,25 @@
 
 ##### Automat №1
 
-$L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}$
+![L = \{w \in \{a,b,c \}^* | |w|_c = 1 \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b,c%20%5C%7D%5E*%20%7C%20%7Cw%7C_c%20=%201%20%5C%7D)
 
    <img title="" src="./task 1/graph_1_1.svg" alt="" data-align="inline" width="746">    
 
 ##### Automat №2
 
-$L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}$
+![L = \{w \in \{a,b\}^* | |w|_a \leq  2; |w|_b \geq 2\}}(https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%5Cleq%20%202;%20%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
 <img title="" src="./task 1/graph_1_2.svg" alt="" data-align="inline" width="779">
 
 ##### Automat №3
 
-$L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}$
+![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%20%5Cneq%20%7Cw%7C_b%20%5C%7D)
 
 <img title="" src="./task 1/graph_1_3.svg" alt="" data-align="inline" width="737">
 
 ##### Automat №4
 
-$L = \{w \in \{a,b\}^* | ww = www \}$
+![L = \{w \in \{a,b\}^* | ww = www \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20ww%20=%20www%20%5C%7D)
 
 <img title="" src="./task 1/graph_1_4.svg" alt="" data-align="inline" width="710">
 
@@ -32,13 +32,13 @@ $L = \{w \in \{a,b\}^* | ww = www \}$
 
 ##### Automat №1
 
-$L = \{w \in \{a,b\}^* ||w|_a \geq 2 \wedge |w|_b \geq 2\}$
+![L = \{w \in \{a,b\}^* ||w|_a \geq 2 \wedge |w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%202%20%5Cwedge%20%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
-   First, let's create DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_a \geq 2\}$
+   First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%202%5C%7D)
 
 <img title="" src="./task 2/1/graph_2_1_1.svg" alt="" data-align="inline" width="827">
 
-   Now, let's create second DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_b \geq 2\}$
+   Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \geq 2\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5Cgeq%202%5C%7D)
 
 <img title="" src="./task 2/1/graph_2_1_2.svg" alt="" data-align="inline" width="784">
 
@@ -48,13 +48,13 @@ $L = \{w \in \{a,b\}^* ||w|_a \geq 2 \wedge |w|_b \geq 2\}$
 
 ##### Automat №2
 
-$L = \{w \in \{a,b\}^* ||w|_a \geq 3 \wedge |w|_b \;is \; odd\; \}$
+![L = \{w \in \{a,b\}^* ||w|_a \geq 3 \wedge |w|_b \;is \; odd\; \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%203%20%5Cwedge%20%7Cw%7C_b%20%5C;is%20%5C;%20odd%5C;%20%5C%7D)
 
-   First, let's create DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_a \geq 3\}$
+   First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \geq 3\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5Cgeq%203%5C%7D)
 
 <img title="" src="./task 2/2/graph_2_2_1.svg" alt="" data-align="inline" width="815">
 
-   Now, let's create second DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_b \;is \; odd\}$
+   Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \;is \; odd\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5C;is%20%5C;%20odd%5C%7D)
 
 <img title="" src="./task 2/2/graph_2_2_2.svg" alt="" data-align="inline" width="773">
 
@@ -64,13 +64,13 @@ $L = \{w \in \{a,b\}^* ||w|_a \geq 3 \wedge |w|_b \;is \; odd\; \}$
 
 ##### Automat №3
 
-$L = \{w \in \{a,b\}^* | |w|_a \;is \; even\; \wedge |w|_b \; is \; multiple \; of \; 3\}$
+![L = \{w \in \{a,b\}^* | |w|_a \;is \; even\; \wedge |w|_b \; is \; multiple \; of \; 3\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%5C;is%20%5C;%20even%5C;%20%5Cwedge%20%7Cw%7C_b%20%5C;%20is%20%5C;%20multiple%20%5C;%20of%20%5C;%203%5C%7D)
 
-First, let's create DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_a \;is \; even\;\}$
+First, let's create DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_a \;is \; even\;\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_a%20%5C;is%20%5C;%20even%5C;%5C%7D)
 
 <img src="./task 2/3/graph_2_3_1.svg" title="" alt="" width="657">
 
-Now, let's create second DFA that recognizes $L = \{w \in \{a,b\}^* ||w|_b \; is \; multiple \; of \; 3\}$
+Now, let's create second DFA that recognizes ![L = \{w \in \{a,b\}^* ||w|_b \; is \; multiple \; of \; 3\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%7Cw%7C_b%20%5C;%20is%20%5C;%20multiple%20%5C;%20of%20%5C;%203%5C%7D)
 
 <img src="./task 2/3/graph_2_3_2.svg" title="" alt="" width="751">
 
@@ -80,7 +80,7 @@ And our final result:
 
 ##### Automat №4
 
-$L = \overline{L_3}$
+![L = \overline{L_3}](https://latex.codecogs.com/svg.image?L%20=%20%5Coverline%7BL_3%7D)
 
 Well, this is easy
 
@@ -88,9 +88,9 @@ Well, this is easy
 
 ##### Automat №5
 
-$L = L_2 / L_3$
+![L = L_2 / L_3](https://latex.codecogs.com/svg.image?L%20=%20L_2%20/%20L_3)
 
-So, $L_2$ has 8 nodes and $L_3$ has 6 nodes. This mean's $L_5$ will have 48 nodes.... Screw this
+So, ![L_2](https://latex.codecogs.com/svg.image?L_2) has 8 nodes and ![L_3](https://latex.codecogs.com/svg.image?L_3) has 6 nodes. This mean's ![L_5](https://latex.codecogs.com/svg.image?L_5) will have 48 nodes.... Screw this
 
 ### Task 3. Create a minimal DFA that recognizes the same language as described by a regular expression.
 
@@ -106,9 +106,9 @@ Cuz we have "+" first of all we must define NFA.
 
 |          | a             | b             |
 |:--------:|:-------------:|:-------------:|
-| 1        | 3,6,10        | $\varnothing$ |
-| 3,6,10   | $\varnothing$ | 4,7           |
-| 4,7      | 8,3,6,10      | $\varnothing$ |
+| 1        | 3,6,10        | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) |
+| 3,6,10   | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) | 4,7           |
+| 4,7      | 8,3,6,10      | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) |
 | 8,3,6,10 | 3,6,10        | 4,7           |
 
 Now, using this table, we can convert NFA to DFA
@@ -127,13 +127,13 @@ Table to conversion:
 
 |     | a             | b             |
 | --- | ------------- | ------------- |
-| 1   | 2,8           | $\varnothing$ |
-| 2,8 | 3,7           | $\varnothing$ |
+| 1   | 2,8           | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) |
+| 2,8 | 3,7           | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) |
 | 3,7 | 4             | 6,8           |
-| 4   | $\varnothing$ | 5             |
-| 6,8 | 3,7           | $\varnothing$ |
+| 4   |![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) | 5             |
+| 6,8 | 3,7           | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) |
 | 5   | 4             | 6             |
-| 6   | 3,7           | $\varnothing$ |
+| 6   | 3,7           | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) |
 
 And our automat:
 
@@ -160,7 +160,7 @@ Table:
 | 2     | 3             | 3     |
 | 1,2,3 | 1,2,3         | 1,2,3 |
 | 2,3   | 3             | 1,3   |
-| 3     | $\varnothing$ | 1     |
+| 3     | ![\varnothing](https://latex.codecogs.com/svg.image?%5Cvarnothing) | 1     |
 | 1,3   | 1,2           | 1,2   |
 
 DFA:
