@@ -204,7 +204,7 @@ Yes it's regular
 x = b^i \quad y=b^j \quad i + j \leq n \quad j > 0 \\
 z = b^{n-i-j}aaa^n \\
 |xy| \leq n \quad |y| > 0 \\
-xy^0z = b^ib^{n-i-j}aaa^n = b^{n-j}aaa^n\notin L
+xy^0z = b^ib^{n-i-j}aaa^n = b^{n-j}aaa^n\notin L \\
 ](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20b%5Enaaa%5En,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%5C%5Cx%20=%20b%5Ei%20%5Cquad%20y=b%5Ej%20%5Cquad%20i%20&plus;%20j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20b%5E%7Bn-i-j%7Daaa%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20b%5Eib%5E%7Bn-i-j%7Daaa%5En%20=%20b%5E%7Bn-j%7Daaa%5En%5Cnotin%20L
 
 ##### Language 3
@@ -218,7 +218,7 @@ xy^0z = b^ib^{n-i-j}aaa^n = b^{n-j}aaa^n\notin L
 x = a^i \quad y = a^j \quad i+j \leq n \quad j > 0 \\
 z = a^{n-i-j}b^n \\
 |xy| \leq n \quad |y| > 0 \\
-xy^0z = a^ia^{n-i-j}b^n = a^{n-j}b^n \notin L
+xy^0z = a^ia^{n-i-j}b^n = a^{n-j}b^n \notin L \\
 ](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20a%5Enb%5En%20,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20a%5Ei%20%5Cquad%20y%20=%20a%5Ej%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20a%5E%7Bn-i-j%7Db%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5E0z%20=%20a%5Eia%5E%7Bn-i-j%7Db%5En%20=%20a%5E%7Bn-j%7Db%5En%20%5Cnotin%20L)
 
 ##### Language 4
@@ -232,7 +232,7 @@ xy^0z = a^ia^{n-i-j}b^n = a^{n-j}b^n \notin L
 x = a^i \quad y = a^j \quad i+j \leq n \quad j > 0 \\
 z = a^{n-i-j}ba^n \\
 |xy| \leq n \quad |y| > 0 \\
-xy^kz = a^ia^{jk}a^{n-i-j}ba^n = a^{n-j(k-1)}ba^n \notin L \quad \forall k > 1
+xy^kz = a^ia^{jk}a^{n-i-j}ba^n = a^{n-j(k-1)}ba^n \notin L \quad \forall k > 1 \\
 ](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20a%5Enba%5En%20,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20a%5Ei%20%5Cquad%20y%20=%20a%5Ej%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20a%5E%7Bn-i-j%7Dba%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5Ekz%20=%20a%5Eia%5E%7Bjk%7Da%5E%7Bn-i-j%7Dba%5En%20=%20a%5E%7Bn-j(k-1)%7Dba%5En%20%5Cnotin%20L%20%5Cquad%20%5Cforall%20k%20%3E%201)
 
 ##### Language 5
