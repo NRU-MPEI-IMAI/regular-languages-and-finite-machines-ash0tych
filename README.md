@@ -187,7 +187,7 @@ We can minimize this:
 
 ##### Language 1
 
-![L = {(aab)^nb(aba)^m \mid n ≥ 0, m ≥ 0}](https://latex.codecogs.com/svg.image?L%20=%20%7B(aab)%5Enb(aba)%5Em%20%5Cmid%20n%20%E2%89%A5%200,%20m%20%E2%89%A5%200%7D)
+![L = {(aab)^nb(aba)^m \mid n \geqslant  0, m \geqslant  0}](https://latex.codecogs.com/svg.image?L%20=%20%7B(aab)%5Enb(aba)%5Em%20%5Cmid%20n%20%5Cgeqslant%20%200,%20m%20%5Cgeqslant%20%200%7D)
 
 <img title="" src="./task 4/graph_4_1.svg" alt="" data-align="inline" width="695">
 
@@ -195,7 +195,7 @@ Yes it's regular
 
 ##### Language 2
 
-![L = \{uaav \mid u ∈ \{a, b\}^*, v ∈ \{a, b\}^*, |u|_b ≥ |v|_a\}](https://latex.codecogs.com/svg.image?$L%20=%20%5C%7Buaav%20%5Cmid%20u%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20v%20%E2%88%88%20%5C%7Ba,%20b%5C%7D%5E%E2%88%97,%20%7Cu%7C_b%20%E2%89%A5%20%7Cv%7C_a%5C%7D)
+![L = \{uaav \mid u \in \{a, b\}^*, v \in \{a, b\}^*, |u|_b \geqslant  |v|_a\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Buaav%20%5Cmid%20u%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%20v%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%20%7Cu%7C_b%20%5Cgeqslant%20%20%7Cv%7C_a%5C%7D)
 
 ![
 \\
