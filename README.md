@@ -239,6 +239,8 @@ z = a^{n-i-j}ba^n \\
 xy^kz = a^ia^{jk}a^{n-i-j}ba^n = a^{n-j(k-1)}ba^n \notin L \quad \forall k > 1 \\
 ](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20a%5Enba%5En%20,%20%7C%5Comega%7C%20%5Cgeq%20%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20a%5Ei%20%5Cquad%20y%20=%20a%5Ej%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%20%5C%5Cz%20=%20a%5E%7Bn-i-j%7Dba%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5Ekz%20=%20a%5Eia%5E%7Bjk%7Da%5E%7Bn-i-j%7Dba%5En%20=%20a%5E%7Bn-j(k-1)%7Dba%5En%20%5Cnotin%20L%20%5Cquad%20%5Cforall%20k%20%3E%201)
 
+It's not regular
+
 ##### Language 5
 
 ![L = \{ucv \mid u \in \{a, b\}^*, v \in \{a, b\}^*, u \neq v^R\}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bucv%20%5Cmid%20u%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%20v%20%5Cin%20%5C%7Ba,%20b%5C%7D%5E*,%20u%20%5Cneq%20v%5ER%5C%7D)
@@ -252,5 +254,7 @@ z = \alpha_{i+j+1}\alpha_{i+j+2}...\alpha_{2n}c(ba)^n \\
 |xy| \leq n \quad |y| > 0 \\
 xy^kz = \alpha_1...\alpha_i(\alpha_{i+1}...\alpha_{i+j})^k\alpha_{i+j+1}...\alpha_{2n}c(ba)^n \notin L \quad \forall k > 1\\
 ](https://latex.codecogs.com/svg.image?%5C%5C%5Comega%20=%20(ab)%5Enc(ba)%5En%20=%20%5Calpha_1%5Calpha_2...%5Calpha_%7B4n&plus;1%7D,%20%7C%5Comega%7C%20%5Cgeq%20n%20%5C%5C%5Comega%20=%20xyz%20%5C%5Cx%20=%20%5Calpha_1%5Calpha_2...%5Calpha_i%20%5Cquad%20y=%5Calpha_%7Bi&plus;1%7D%5Calpha_%7Bi&plus;2%7D...%5Calpha_%7Bi&plus;j%7D%20%5Cquad%20i&plus;j%20%5Cleq%20n%20%5Cquad%20j%20%3E%200%5C%5Cz%20=%20%5Calpha_%7Bi&plus;j&plus;1%7D%5Calpha_%7Bi&plus;j&plus;2%7D...%5Calpha_%7B2n%7Dc(ba)%5En%20%5C%5C%7Cxy%7C%20%5Cleq%20n%20%5Cquad%20%7Cy%7C%20%3E%200%20%5C%5Cxy%5Ekz%20=%20%5Calpha_1...%5Calpha_i(%5Calpha_%7Bi&plus;1%7D...%5Calpha_%7Bi&plus;j%7D)%5Ek%5Calpha_%7Bi&plus;j&plus;1%7D...%5Calpha_%7B2n%7Dc(ba)%5En%20%5Cnotin%20L%20%5Cquad%20%5Cforall%20k%20%3E%201%5C%5C)
+
+
 
 It's not regular
