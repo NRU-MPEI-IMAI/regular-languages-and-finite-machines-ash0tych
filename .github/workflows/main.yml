@@ -14,7 +14,7 @@ jobs:
         run: sudo apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
         
       - name: Convert md 2 pdf
-        run: pandoc README.md -o README.pdf
+        run: pandoc "Report 1.md" -o README.pdf
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
