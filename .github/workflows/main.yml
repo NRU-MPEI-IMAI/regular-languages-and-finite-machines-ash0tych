@@ -22,7 +22,7 @@ jobs:
         run: pip install md2pdf
         
       - name: Generate pdf
-        run: md2pdf README.md Report.pdf
+        run: md2pdf "Report 1.md" "Report 1.pdf"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
