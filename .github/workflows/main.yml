@@ -22,27 +22,4 @@ jobs:
           name: Report for homework
           path: "README.pdf"
           
-          
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7
-          
         
-      - name: Install dependencies
-        run: python -m pip install --upgrade pip
-        
-      - name: Install py-md-to-pdf
-        run: git clone https://github.com/chrisconlan/md_math_to_pdf
-        
-        
-      - name: Convert another time
-        working-directory: math_md_to_pdf
-        run: python3 -m math_md_to_pdf "../README.md"
-        
-      - name: Save pdf as artifact 2
-        uses: actions/upload-artifact@v3
-        with:
-          name: Report for homework 2
-          path: "README.pdf"
-      
