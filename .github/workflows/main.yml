@@ -18,11 +18,11 @@ jobs:
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
         
-      - name: Install md2pdf
-        run: pip install md2pdf
+      - name: Install grip
+        run: pip install grip
         
       - name: Generate pdf
-        run: md2pdf "Report 1.md" "Report 1.pdf"
+        run: grip "Report 1.md"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
