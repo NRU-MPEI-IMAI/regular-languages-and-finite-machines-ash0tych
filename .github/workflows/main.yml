@@ -23,11 +23,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: npm install, build, and test
-        run: |
-          npm install
-
       - name: install markdown to pdf dependences
         run: |
           apt install texlive-full -y
