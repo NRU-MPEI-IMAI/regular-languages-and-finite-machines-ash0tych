@@ -16,7 +16,7 @@ jobs:
           go-version: 1.17
     
       - name: Install md2pdf
-        run: git clone github.com/mandolyte/mdtopdf
+        run: git clone https://github.com/mandolyte/mdtopdf
         
       - name: Generate pdf
         run: go run ./mdtopdf/cmd/convert.go -i README.md -o "README.pdf"
