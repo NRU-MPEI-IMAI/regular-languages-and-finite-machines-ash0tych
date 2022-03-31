@@ -9,17 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
-      - name: Install md2pdf
-        run: npm i -g md-to-pdf
-        
-      - name: Generate pdf
-        run: md-to-pdf "README.md"
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: ./
+          output_dir: ./
+          images_dir: ./
+          image_import: ./
+          build_html: false
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
         with:
           name: Report for homework
-          path: "README.pdf"
+          path: README.pdf
         
       
