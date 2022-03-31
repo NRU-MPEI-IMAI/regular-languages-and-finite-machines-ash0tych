@@ -9,13 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: baileyjm02/markdown-to-pdf@v1
-        with:
-          input_dir: ./
-          output_dir: ./
-          images_dir: ./
-          image_import: ./
-          build_html: false
+    
+      - name: Install Pandoc
+        run: sudo apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+        
+      - name: Convert md 2 pdf
+        run: pandoc README.md -o README.pdf
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
