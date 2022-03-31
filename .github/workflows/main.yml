@@ -10,16 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Set up Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.17
-    
       - name: Install md2pdf
-        run: git clone https://github.com/mandolyte/mdtopdf
+        run: npm i -g md-to-pdf
         
       - name: Generate pdf
-        run: go run ./mdtopdf/cmd/convert.go -i README.md -o "README.pdf"
+        run: md-to-pdf README.md
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
