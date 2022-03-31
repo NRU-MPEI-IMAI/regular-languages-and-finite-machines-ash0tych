@@ -16,10 +16,10 @@ jobs:
           go-version: 1.17
     
       - name: Install md2pdf
-        run: go get github.com/mandolyte/mdtopdf
+        run: git clone github.com/mandolyte/mdtopdf
         
       - name: Generate pdf
-        run: go run convert.go -i README.md -o "README.pdf"
+        run: go run ./mdtopdf/cmd/convert.go -i README.md -o "README.pdf"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
