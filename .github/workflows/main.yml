@@ -10,16 +10,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
     
-      - name: Install Pandoc
-        run: sudo apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+      - name: Install md-to-pdf
+        run: npm i -g md-to-pdf
         
-      - name: Convert md 2 pdf
-        run: pandoc "Report 1.md" -o README.pdf
+      - name: Convert md
+        run: md-to-pdf "Report 1.md" -o "Report 1.pdf"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
         with:
           name: Report for homework
-          path: README.pdf
+          path: "Report 1.pdf"
         
       
