@@ -14,12 +14,12 @@ jobs:
         run: npm i -g md-to-pdf
         
       - name: Generate pdf
-        run: md-to-pdf README.md
+        run: md-to-pdf "Report 1.md"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
         with:
           name: Report for homework
-          path: "README.pdf"
+          path: "Report 1.pdf"
         
       
