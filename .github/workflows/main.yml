@@ -25,7 +25,7 @@ jobs:
 
       - name: install markdown to pdf dependences
         run: |
-          apt install texlive-full -y
-          apt install pandoc -y
+          sudo apt install texlive-full -y
+          sudo apt install pandoc -y
           git clone https://github.com/melichron/md2pdf.git && cd md2pdf
-          ./install.sh
+          sudo ./install.sh
