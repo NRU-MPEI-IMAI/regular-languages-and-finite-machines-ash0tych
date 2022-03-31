@@ -20,6 +20,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Report for homework
-          path: "Report 1.pdf"
+          path: "README.pdf"
         
       
