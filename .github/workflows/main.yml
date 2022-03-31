@@ -1,45 +1,33 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
+name: Report generator
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: install markdown to pdf dependences
-        run: |
-          sudo apt-get install texlive-full -y --fix-missing
-          sudo apt-get install pandoc -y --fix-missing
-          git clone https://github.com/melichron/md2pdf.git 
-        
-      - name: install md2pdf
-        working-directory: ./md2pdf
-        run: sudo ./install.sh
-      
-      - name: convert report
-        run: |
-          md2pdf README.md
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
           
-      - name: Archive production artifacts
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+        
+      - name: Install md2pdf
+        run: pip install md2pdf
+        
+      - name: Generate pdf
+        run: md2pdf README.md Report.pdf
+        
+      - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
-        with: 
-           name: Final report
-           path: |
-             README.pdf
+        with:
+          name: Report for homework
+          path: Report.pdf
+        
+      
