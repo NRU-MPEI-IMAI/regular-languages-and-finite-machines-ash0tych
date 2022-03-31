@@ -14,7 +14,7 @@ jobs:
         run: npm i -g md-to-pdf
         
       - name: Convert md
-        run: md-to-pdf "Report 1.md" -o "Report 1.pdf"
+        run: md-to-pdf "Report 1.md"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
