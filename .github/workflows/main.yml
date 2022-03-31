@@ -14,12 +14,12 @@ jobs:
         run: npm install -g markdown-pdf --ignore-scripts
         
       - name: Generate pdf
-        run: markdown-pdf "Report 1.md"
+        run: markdown-pdf ./README.md
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
         with:
           name: Report for homework
-          path: "Report 1.pdf"
+          path: "README.pdf"
         
       
