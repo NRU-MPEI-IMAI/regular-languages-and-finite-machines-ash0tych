@@ -9,12 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
     
       - name: Install md2pdf
-        run: npm install -g markdown-pdf
+        run: go get github.com/mandolyte/mdtopdf
         
       - name: Generate pdf
-        run: markdown-pdf ./README.md
+        run: go run convert.go -i README.md -o "README.pdf"
         
       - name: Save pdf as artifact
         uses: actions/upload-artifact@v3
