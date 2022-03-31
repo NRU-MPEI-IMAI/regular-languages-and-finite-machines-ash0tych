@@ -37,7 +37,8 @@ jobs:
         
         
       - name: Convert another time
-        run: python3 -m ./math_md_to_pdf "README.md"
+        working-directory: ./math_md_to_pdf
+        run: python3 -m math_md_to_pdf "../README.md"
         
       - name: Save pdf as artifact 2
         uses: actions/upload-artifact@v3
