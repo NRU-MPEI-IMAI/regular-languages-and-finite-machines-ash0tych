@@ -20,7 +20,7 @@
 
 ![L = \{w \in \{a,b\}^* | |w|_a  \neq |w|_b \}](https://latex.codecogs.com/svg.image?L%20=%20%5C%7Bw%20%5Cin%20%5C%7Ba,b%5C%7D%5E*%20%7C%20%7Cw%7C_a%20%20%5Cneq%20%7Cw%7C_b%20%5C%7D)
 
-<img title="" src="./task 1/graph_1_3.svg" alt="" data-align="inline" width="737">
+Такой автомат невозможно построить, так как язык не регулярный
 
 ##### Automat №4
 
