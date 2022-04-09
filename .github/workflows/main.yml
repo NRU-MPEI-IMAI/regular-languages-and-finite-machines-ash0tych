@@ -1,0 +1,27 @@
+name: Report generator
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+    
+      - name: Install md-to-pdf
+        run: npm i -g md-to-pdf
+        
+      - name: Convert md
+        run: md-to-pdf "README.md"
+        
+      - name: Save pdf as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Report for homework
+          path: "README.pdf"
+          
+        
